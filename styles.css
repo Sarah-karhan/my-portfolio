@@ -1,0 +1,256 @@
+/* heaer part start */
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+   width: 100%;
+}
+ .navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  
+
+}
+
+.brand-title{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+.navbar-links li{
+    list-style: none;
+    
+    
+}
+.navbar-links li a{
+    text-decoration:none;
+    color: white;
+    padding: 1rem;
+    display: block;
+
+} 
+
+.navbar-links li:hover{
+    text-decoration: underline;   
+}
+.toggle-button{
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+/* @media is like a condetion if its met then change the disply */
+@media (max-width:600px) {
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+    /* when its active we want the display to be flex */
+    .navbar-links.active{
+        display: flex;
+    }
+}
+/* heaer part ends */
+
+/* home part start */
+.home{
+    position: absolute;
+    color: white;
+    top: 220px;
+    left: 86px;
+    font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+   font-size: 40px;
+   height: 100%;
+  
+}
+.myname{
+    color: lightcoral;
+    font-weight: 600;
+}
+.auto-type{
+    color: lightslategrey;
+    text-shadow: #09011b;
+}
+.imInto{
+    font-size: 30px;
+}
+.home .btn {
+    margin-top: 1rem;
+    position: absolute;
+    line-height: 0;
+    padding: 1.6rem 3rem;
+    border-radius: 4em;
+    transition: 0.5s;
+    color: #fff;
+    background: purple;
+    box-shadow: 0px 5px 18px purple;
+    font-family: "Nunito", sans-serif;
+  }
+  .home .btn span {
+    font-weight: 700;
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+  }
+  .home .btn:hover {
+    background: #1a047e;
+  }
+  /* social icons start */
+.socials {
+    position: relative;
+    margin-top: 9rem;
+   
+  }
+  .socials .social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  .socials .social-icons li {
+    display: inline-block;
+    margin-bottom: 14px;
+  }
+  .social-icons a {
+    font-size: 2rem;
+    display: inline-block;
+    line-height: 44px;
+    color: white;
+    background-color: #09011b;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  .social-icons a:active,
+  .social-icons a:focus,
+  .social-icons a:hover {
+    color: #fff;
+    background-color: #09011b;
+  }
+  .social-icons a.github:hover {
+    background-color: grey;
+  }
+  .social-icons a.twitter:hover {
+    background-color: #00aced;
+  }
+  .social-icons a.linkedin:hover {
+    background-color: #007bb6;
+  }
+  .social-icons a.instagram:hover {
+    background-color: #ee00da;
+  }
+  /* social icons end */
+/* home part ends */
+
+/* about me part starts */
+.about{
+    position: absolute;
+    top:900px;
+    width:100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 37px;
+    background: rgb(255, 255, 255);
+   margin: auto;
+   text-align: center;
+   height: 500px;
+}
+.about-pic{
+    position: absolute;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+}
+.about-me{
+    position: absolute;
+    left: 900px;
+    top: 170px;
+    font-size: 16px;
+    text-align: justify;
+    width: 400px;
+}
+
+/* about me part ends*/
+
+/* courses part starts */
+
+.courses{
+    position: absolute;
+    top: 1650px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 37px;
+    height: 789px;
+}
+
+.cours-pic{
+    position: absolute;
+    left: 700px;
+    width: 50px;
+  
+}
+.courses-me{
+    position: absolute;
+    left: 170px;
+    top:220px;
+    font-size: 17px;
+    text-align: justify;
+    width: 400px;  
+}
+/* courses part ends */
